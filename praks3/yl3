@@ -1,0 +1,10 @@
+#!/bin/bash
+echo -n "Sisestage ainepunktide arv: "
+read aine
+echo -n "Sisestagle nädalate arv: "
+read aeg
+
+jagada=$(expr $aine \* $aeg)
+#echo "$jagada"
+ymardada=$(expr $jagada / 10)
+echo "$ymardada"
