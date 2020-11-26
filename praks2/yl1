@@ -1,0 +1,11 @@
+#!/bin/bash
+nimi=$(whoami)
+
+#echo "Tere $nimi"
+
+esitaht=$(whoami | cut -c1 | tr [a-z] [A-Z])
+#echo "$esitaht"
+teinepool=$(whoami | cut -c2-)
+#echo "$teinepool"
+
+echo "Tere $esitaht$teinepool!"
