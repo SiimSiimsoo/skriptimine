@@ -1,11 +1,13 @@
 #!/bin/bash
-nimi=$(whoami)
+#nimi=$(whoami)
 
-#echo "Tere $nimi"
+#echo "Tere, $nimi"
 
+#Lõikan välja esitähe, et seda suureks täheks konvertida
 esitaht=$(whoami | cut -c1 | tr [a-z] [A-Z])
 #echo "$esitaht"
+#lõikan cut käsigua ülejäänud teksti alates teisest tähest
 teinepool=$(whoami | cut -c2-)
 #echo "$teinepool"
-
-echo "Tere $esitaht$teinepool!"
+#Panen kokku esitähe ja ülejäänud tähed
+echo "Tere, $esitaht$teinepool!"
